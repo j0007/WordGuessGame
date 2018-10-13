@@ -10,6 +10,10 @@
 </head>
 <body>
 
+        <audio id="myAudio" controls autoplay loop>
+                <source src="assets/music/MoooInstrumental.mp3" type="audio/mp3">
+              </audio>
+
         <div class="jumbotron jumbotron-fluid bg-transparent">
         <div class="container">
             <h1 class="display-3 text-center text-white">Whats for lunch?</h1>
@@ -24,18 +28,27 @@
             </div>
         </div>
     </div>
-
+ 
     <div class="container">
         <div class=row>
             <div class="col-lg-6">
-                    <p class="text-white" id="guessCounter"></p>
+                <p class="text-white text-center" id="guessCounter"></p>
             </div>
-            <div class="col-lg-6 resetbttn">1</div>
+            <div class="col-lg-6">
+                    <p class="text-white text-center" id="keysPressed"></p>
+               
+            </div>
         </div>
     </div>
+    <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                        <input type="button" class="btn btn-warning float-right" value="Restart" onClick="document.location.reload(true)">
+                </div>
+            </div>
+        </div>
 
 
-    
 </body>
 <script type="text/javascript" src="assets/javascript/game.js"></script>
 </html>

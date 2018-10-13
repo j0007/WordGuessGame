@@ -3,12 +3,20 @@ body{
     
 }
 
-#mysteryWord {
-    font-size: 100px;
-    font: white;
-    text-align: center;
-}
 
 .jumbotron{
     font-family: 'Lobster', cursive;
+}
+
+#mysteryWord {
+    font-size: 100px;
+    text-align: center;
+}
+
+#guessCounter {
+    font-size: 25px;
+}
+
+#keysPressed {
+    font-size: 25px;
 }

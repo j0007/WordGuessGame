@@ -15,12 +15,15 @@ for (i=0; i < emptyWord.length; i++){
 }
 
 //Display Counter
-document.getElementById("guessCounter").innerHTML = ("# of Guesses:" + guessLeft);
+document.getElementById("guessCounter").innerHTML = ("# of Guesses Left:" + guessLeft);
+document.getElementById("keysPressed").innerHTML = ("Letters Guessed: ");
 
 // Correct Input Replacements
 document.onkeyup = function(event) {
 var userGuess = event.key;
 console.log(event)
+document.getElementById("keysPressed").innerHTML = ("Letters Guessed: " + userGuess);
+
 
 if (userGuess === "h") {
     emptyWord.splice(0,1,"h");
@@ -64,7 +67,7 @@ else{
 
 //Displays Results 
 document.getElementById("mysteryWord").innerHTML = (emptyWord.join(""));
-document.getElementById("guessCounter").innerHTML = ("# of Guesses:" + guessLeft);
+document.getElementById("guessCounter").innerHTML = ("# of Guesses Left:" + guessLeft);
 
 // Alert Correct! Lets Eat!
 if
@@ -78,6 +81,7 @@ if (guessLeft === 0) {
 
 }
 }
+
 
 
   
