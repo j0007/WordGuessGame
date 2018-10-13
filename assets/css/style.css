@@ -1,0 +1,14 @@
+body{ 
+    background: url(../images/Wallpaper.png);
+    
+}
+
+#mysteryWord {
+    font-size: 100px;
+    font: white;
+    text-align: center;
+}
+
+.jumbotron{
+    font-family: 'Lobster', cursive;
+}
