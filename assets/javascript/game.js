@@ -78,6 +78,7 @@ if
 // Alert Loss
 if (guessLeft === 0) {
     alert("NO FOOD FOR YOU!");
+    document.location.reload(true)
 
 }
 }
